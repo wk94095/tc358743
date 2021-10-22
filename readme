@@ -1,0 +1,16 @@
+### HDMI to CSI
+//Prepare:
+1, connect H2C board to camera connector 
+// on NANO
+1, sudo cp tegra210-p3448-0000-p3449-0000-b00-ncb00-tfcard.dtb /boot/
+3, sudo cp Image_ncb /boot/
+4, sudo cp extlinux.conf /boot/extlinux/ 
+5, reboot //lucky!
+
+
+### To test
+1, connect to HDMI video source
+2, on nano run ./gst_demo_1080p
+
+### To test2
+ use /usr/src/jetson_multimedia_api/samples/12_camera_v4l2_cuda
